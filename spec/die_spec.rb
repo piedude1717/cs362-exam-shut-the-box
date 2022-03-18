@@ -14,7 +14,7 @@ describe 'A die' do
 
   describe 'number of sides' do
     it 'has six sides by default' do
-      die = Die.
+      die = Die.new
       expect(die.number_of_sides) .to eq(6)
     end
 

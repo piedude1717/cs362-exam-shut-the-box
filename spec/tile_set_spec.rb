@@ -19,7 +19,7 @@ describe 'A tile set' do
       tile_set = TileSet.generate()
       tile_set.each do |tile|
         x += 1
-        expect(tile_set)
+        expect(tile.value) .to eq(x)
       end
     end
 
