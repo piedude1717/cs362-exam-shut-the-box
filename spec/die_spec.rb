@@ -33,7 +33,8 @@ describe 'A die' do
 
   describe '#to_s string representation' do
     it 'TODO' do
-      skip
+      die = Die.new(8)
+      expect(die.to_s) .to be_a(String)
     end
   end
 
