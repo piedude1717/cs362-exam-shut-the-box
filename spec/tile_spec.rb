@@ -5,20 +5,23 @@ describe 'A tile' do
   describe 'attributes' do
 
     it 'has a value' do
-      skip
+      tile = Tile.new(1).value
     end
 
   end
 
   describe '#up?' do
     it 'is up by default' do
-      skip
+      tile = Tile.new(1)
+      expect(tile.up?) .to eq(true)
     end
   end
 
   describe '#flip' do
     it 'is up after being flipped' do
-      skip
+      tile = Tile.new(1)
+      tile.flip
+      expect(tile.up?) .to eq(false)
     end
 
     it 'stays down despite being flipped more than once' do
