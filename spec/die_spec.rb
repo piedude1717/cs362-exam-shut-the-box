@@ -4,11 +4,13 @@ describe 'A die' do
 
   describe 'attributes' do
     it 'TODO' do
-      skip
+      die = Die.new
+      expect(die.number_of_sides) .to eq(die.number_of_sides)
     end
 
     it 'TODO' do
-      skip
+      die = Die.new
+      expect(die.face_value) .to eq(die.face_value)
     end
   end
 
